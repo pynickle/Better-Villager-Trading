@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "better_villager_trading"
+version = "${version}"
+displayName = "Better Villager Trading"
+authors = "ENC_Euphony"
+description = '''
+A client-side mod for better villager trading
+'''
+#logoFile = ""
+
+[[dependencies.better_villager_trading]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.better_villager_trading]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "better_villager_trading.mixins.json"

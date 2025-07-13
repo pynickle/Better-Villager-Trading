@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "better_villager_trading",
+  "version": "${version}",
+  "name": "Better Villager Trading",
+  "description": "A client-side mod for better villager trading",
+  "authors": [
+    "ENC_Euphony"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/better_villager_trading/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.euphony.better_villager_trading.fabric.BetterVillagerTradingFabric"
+    ],
+    "client": [
+      "com.euphony.better_villager_trading.fabric.client.BetterVillagerTradingFabricClient"
+    ]
+  },
+  "mixins": [
+    "better_villager_trading.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
